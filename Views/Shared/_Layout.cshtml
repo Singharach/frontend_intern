@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Prapokklao</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="~/Prapokklao.styles.css" asp-append-version="true" />
+</head>
+<body>
+	<div>
+		<header style="min-height: 37px; background-color:#00695C ; position: relative; z-index: 2">
+			<div class="container-fluid">
+				<div style="margin-top: 5px; float: right; margin-inline-end:2em">
+					<div style="display:inline-block;">
+						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
+							<li style="display:inline-block;">
+								<a href="https://www.facebook.com" target="_blank">
+									<i class="bi bi-messenger" style="color: white;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div style="display:inline-block;">
+						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
+							<li style="display:inline-block;">
+								<a href="https://www.facebook.com" target="_blank">
+									<i class="bi bi-facebook" style="color: white;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div style="display:inline-block;">
+						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
+							<li style="display:inline-block;">
+								<a href="https://www.linkedin.com" target="_blank">
+									<i class="bi bi-linkedin" style="color: white;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div style="display:inline-block;">
+						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
+							<li style="display:inline-block;">
+								<a href="https://www.x.com" target="_blank">
+									<i class="bi bi-twitter-x" style="color: white;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div style="display:inline-block;">
+						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
+							<li style="display:inline-block;">
+								<a href="https://www.line.me/th/" target="_blank">
+									<i class="bi bi-line" style="color: white;"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow" style=" background-color: white; padding-bottom:0rem; ">
+				<div class="container">
+					<a class="navbar-brand" style=";" asp-area="" asp-controller="Home" asp-action="Index">
+						<img src="https://s3-alpha-sig.figma.com/img/b32b/8938/2ac12234a3130528ce6d8340ad35f3c0?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dWuY9LGufElj3FQz8Mzn~9dl9iPolvgpvBXSd~KXUQJVfb1U0dMW6bZaFLGbeiXelSsL~IFStKOfcP9SXSqcIPuJ9QCI4-qErF1kpUBlsdpx4PISncuuQQCMLlnwlMklhVqfmbnBzr8Z6Js82V~WH2Ur2XDZyBqRpxPGRZuLAij~8OI5wqr2XJSxKw6eDIJuSQ6l6EYkYD716boLdtiysg-k9xLML0eqOWZ3EwEl4NvfI4bGWEPTAV6LWpbSW8aFkD0XUQVieqUlR9TcDyDF20i4d2o0d21AX1ghfyLw4rwHcrVSSAOg1ytAE-hVft27ndggjM~iXa8YW5alVSlIyQ__" style="width:265px;height:70px;" />
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+						<ul class="navbar-nav flex-grow-1">
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">หน้าแรก</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">เกี่ยวกับสถาบัน</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">คลังความรู้</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">ข่าวสาร</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">หลักสูตร</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">ติดต่อเรา</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+	</div>
+	<main role="main" class="pb-3">
+		@RenderBody()
+	</main>
+
+	@* <footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2024 - Prapokklao - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer> *@
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	<script src="~/js/slidershow.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
