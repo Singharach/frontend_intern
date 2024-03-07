@@ -1,0 +1,12 @@
+﻿.self {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.self-certificate:before {
+    content: url(/image/certificate3.png);
+}

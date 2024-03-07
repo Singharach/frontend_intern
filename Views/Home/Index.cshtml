@@ -25,8 +25,8 @@
     </div>
 
     <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" style="text-decoration:none" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" style="text-decoration:none" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <header style="background-color:#EDEDED; position: relative; z-index: 2; padding-top:50px; padding-bottom:120px">
     <div class="container" style="padding-inline-start:5em; padding-inline-end:5em;">
@@ -76,25 +76,192 @@
         </div>
     </div>
 </header>
-<div class="container">
+<div class="container" style="margin-block-end:100px;">
     <div class="row">
         <div class="col" style="padding-inline-start:5em; padding-inline-end:5em;">
-            <img src="~/image/344d87b4092eb608ff40116291bb10d2.jpg" style="width:200px; height:320px; object-fit: cover; border-radius:5px; margin: 0 auto; position:relative; bottom:40px; z-index: 3;" />
-            <img src="~/image/1e6d2c6f68bb1a5f2ba799e66de56502.jpg" style="width:200px; height:320px; object-fit: cover; border-radius:5px; margin: 0 30px; position:relative; top:50px; z-index: 3;" />
+            <img src="~/image/344d87b4092eb608ff40116291bb10d2.jpg" style="width:200px; height:320px; object-fit: cover; border-radius:5px; margin: 0 auto; position:relative; bottom:40px; z-index: 3; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" />
+            <img src="~/image/1e6d2c6f68bb1a5f2ba799e66de56502.jpg" style="width:200px; height:320px; object-fit: cover; border-radius:5px; margin: 0 30px; position:relative; top:50px; z-index: 3; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" />
         </div>
         <div class="col" style="padding-top: 150px;">
             <h1 style="color:#00695C;">สถาบันพระปกเกล้า</h1><br />
-            <p>
+            <p style="font-size:20px">
                 สถาบันวิชาการชั้นนำด้านการพัฒนาประชาธิปไตย<br /> อันมีพระมหากษัตริย์ทรงเป็นประมุข ธรรมาภิบาล และสันติวิธี<br />
                 มุ่งนำความรู้สู่สังคม เพื่อประโยชน์ส่วนรวม
             </p>
         </div>
     </div>
 </div>
-<div style="max-width:100%;">
-    <img src="~/image/1af651793b6acd6ac7c0f857e119e88c.jpg" style="width: 100%;"/>
+<div style="max-width:100%; height:350px;">
+    <img src="~/image/background101.jpg" style="mask-image: linear-gradient(to left, white, transparent); position: absolute; width: 100%; height: 350px; object-fit: cover;" />
+    <div class="container" style="padding-inline-start:5em; padding-inline-end:5em; padding-block-start:5em; padding-block-end:5em; position:relative; z-index: 2;">
+        <h1 style="color:#00695C; ">นโยบายคุ้มครองข้อมูลส่วนบุคคล<br /> (Privacy Policy)</h1>
+        <p style="font-size:20px; ">
+            นโยบายคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy)<br /> และแนวปฏิบัติของสถาบันพระปกเกล้า
+        </p>
+        <button type="button" class="btndp">
+            ดูเพิ่มเติม
+        </button>
+    </div>
 </div>
+<div style="max-width:100%; height:auto">
+    <div style="background-color:#00695C; width:100%; height:230px; padding:30px 0; z-index:1; position:relative;">
+        <div class="container" style="text-align:center; color:#fff; padding:0 80px; height:60%">
+            <h1 style="text-shadow: 1px 2px 12px #000;">ข่าวประชาสัมพันธ์</h1>
+            <p style="font-size:18px;">สามารถติดตามข่าวสารและกิจกรรมต่างๆ ของสถาบันพระปกเกล้าได้ที่นี่</p>
+            <div class="nav " style="height:99%">
+                <div class="acm" role="button" onclick="currentPages(1)">
+                    <div class="GcIcon" style="padding-left:10px;">
+                        <button class="cacm">
+                            <li style="font-size: 24px; list-style-type:none;">
+                                <i class="cacmIcon fa fa-bullhorn"></i>
+                            </li>
+                        </button>
+                    </div>
+                    <div class="msb">
+                        <div class="msbback">
+                            <p class="cacmIcon">ข่าวประชาสัมพันธ์</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acm" role="button" onclick="currentPages(2)">
+                    <div class="GcIcon" style="padding-left:10px;">
+                        <button class="cacm">
+                            <li style="font-size: 24px; list-style-type:none;">
+                                <i class="cacmIcon fa fa-tag fa-flip-horizontal"></i>
+                            </li>
+                        </button>
+                    </div>
+                    <div class="msb">
+                        <div class="msbback">
+                            <p class="cacmIcon">ข่าวจัดซื้อจัดจ้าง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acm" role="button" onclick="currentPages(3)">
+                    <div class="GcIcon" style="padding-left:10px;">
+                        <button class="cacm">
+                            <li style="font-size: 24px; list-style-type:none;">
+                                <i class="cacmIcon bi bi-postcard"></i>
+                            </li>
+                        </button>
+                    </div>
+                    <div class="msb">
+                        <div class="msbback">
+                            <p class="cacmIcon">สมัครเรียนและประกาศรายชื่อ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acm" role="button" onclick="currentPages(4)">
+                    <div class="GcIcon" style="padding-left:10px;">
+                        <button class="cacm">
+                            <li style="font-size: 24px; list-style-type:none;">
+                                <i class="cacmIcon bi bi-calendar3"></i>
+                            </li>
+                        </button>
+                    </div>
+                    <div class="msb">
+                        <div class="msbback">
+                            <p class="cacmIcon">ปฏิทินกิจกรรมสถาบัน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#fff; width:100%; height:600px; z-index:2; position:relative;">
+        <div class="container news" >
+            <div style="width:40%; height:100%;">
+                <div style="width: 82px; height: 37px; border-radius:15px; background-color:#FF9800; text-align: center; padding:6px; color:#fff;">ใหม่</div>
+                <br />
+                <h1 style="color:#00695C; margin:0;">เปิดรับสมัคร!<br /> หลักสูตรประกาศนียบัตร </h1>
+                <br />
+                <p style="font-size:20px;">
+                    เปิดรับสมัครผู้สนใจเข้าศึกษาอบรม<br /> หลักสูตรประกาศนียบัตร<br /> การจัดการความขัดแย้งด้วยสันติวิธี รุ่นที่ 6<br /> เปิดรับสมัครตั้งแต่บัดนี้ – วันที่ 20 กุมภาพันธ์ 2567<br /> (ผ่านระบบออนไลน์)
+                </p>
+                <div style="display: flex; justify-content: start; align-items: start; font-size: 30px; margin-bottom:16px;">
 
+                    <i class="bi bi-clock" style=""></i>
+                    <p style="padding:8px 15px; font-size:16px; margin:0; ">จำนวนชั่วโมงเรียน : 198 ชั่วโมง</p>
+                </div>
+                <button type="button" class="btndp">
+                    ดูเพิ่มเติม
+                </button>
+            </div>
+            <div style="width:60%; height:100%;">
+                <img src="~/image/4c0524dfb3551f0c9c72ed418e201df1.jpg" style="max-width:100%; height:100%; border-radius:10px;" />
+            </div>
+        </div>
+        <div class="container news">
+            <div style="width:40%; height:100%;">
+                <div style="width: 82px; height: 37px; border-radius:15px; background-color:#FF9800; text-align: center; padding:6px; color:#fff;">TEST</div>
+                <br />
+                <h1 style="color:#00695C; margin:0;">Header<br /> Element </h1>
+                <br />
+                <p style="font-size:20px;">
+                    Paragraph<br /> Element<br /> ......................<br /> .................................<br /> ............
+                </p>
+                <div style="display: flex; justify-content: start; align-items: start; font-size: 30px; margin-bottom:16px;">
+
+                    <i class="bi bi-clock" style=""></i>
+                    <p style="padding:8px 15px; font-size:16px; margin:0; ">.................</p>
+                </div>
+                <button type="button" class="btndp">
+                    ดูเพิ่มเติม
+                </button>
+            </div>
+            <div style="width:60%; height:100%;">
+                <img src="~/image/4c0524dfb3551f0c9c72ed418e201df1.jpg" style="max-width:100%; height:100%; border-radius:10px;" />
+            </div>
+        </div>
+        <div class="container news">
+            <div style="width:40%; height:100%;">
+                <div style="width: 82px; height: 37px; border-radius:15px; background-color:#FF9800; text-align: center; padding:6px; color:#fff;">TEST2</div>
+                <br />
+                <h1 style="color:#00695C; margin:0;">Header2<br /> Element </h1>
+                <br />
+                <p style="font-size:20px;">
+                    Paragraph2<br /> Element<br /> ......................<br /> .................................<br /> ............
+                </p>
+                <div style="display: flex; justify-content: start; align-items: start; font-size: 30px; margin-bottom:16px;">
+
+                    <i class="bi bi-clock" style=""></i>
+                    <p style="padding:8px 15px; font-size:16px; margin:0; ">.................</p>
+                </div>
+                <button type="button" class="btndp">
+                    ดูเพิ่มเติม
+                </button>
+            </div>
+            <div style="width:60%; height:100%;">
+                <img src="~/image/4c0524dfb3551f0c9c72ed418e201df1.jpg" style="max-width:100%; height:100%; border-radius:10px;" />
+            </div>
+        </div>
+        <div class="container news">
+            <div style="width:40%; height:100%;">
+                <div style="width: 82px; height: 37px; border-radius:15px; background-color:#FF9800; text-align: center; padding:6px; color:#fff;">TEST3</div>
+                <br />
+                <h1 style="color:#00695C; margin:0;">Header3<br /> Element </h1>
+                <br />
+                <p style="font-size:20px;">
+                    Paragraph3<br /> Element<br /> ......................<br /> .................................<br /> ............
+                </p>
+                <div style="display: flex; justify-content: start; align-items: start; font-size: 30px; margin-bottom:16px;">
+
+                    <i class="bi bi-clock" style=""></i>
+                    <p style="padding:8px 15px; font-size:16px; margin:0; ">.................</p>
+                </div>
+                <button type="button" class="btndp">
+                    ดูเพิ่มเติม
+                </button>
+            </div>
+            <div style="width:60%; height:100%;">
+                <img src="~/image/4c0524dfb3551f0c9c72ed418e201df1.jpg" style="max-width:100%; height:100%; border-radius:10px;" />
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width:100%; height:auto;">
+    <div style="max-width:100%; height:250px; background-color:#00695C;"></div>
+</div>
 
 
 
