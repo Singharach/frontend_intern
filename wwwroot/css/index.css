@@ -120,6 +120,10 @@ img {
     align-items: center;
 }
 
+.circleIcon{
+    font-size: 64px; list-style-type:none;
+}
+
 .Btn {
     width: 120px;
     height: 120px;
@@ -134,7 +138,7 @@ img {
     cursor: pointer;
     position: relative;
     transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .svgIcon {
@@ -170,7 +174,6 @@ img {
     background-color: #00695C;
     border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 4px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -188,18 +191,12 @@ img {
     white-space: nowrap;
 }
 
-    .btndp:focus:not(:focus-visible):not(.focus-visible) {
-        box-shadow: none;
-        outline: none;
+    .shadows {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
     }
 
     .btndp:hover {
         background-color: #007d6e;
-    }
-
-    .btndp:focus {
-        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-        outline: none;
     }
 
     .btndp:disabled {
@@ -237,7 +234,7 @@ img {
     cursor: pointer;
     position: relative;
     transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cacmIcon {
@@ -255,7 +252,7 @@ img {
 .msb {
     width: 75%;
     height: 50%;
-    padding: 25px 5px;
+    padding: 15px 0 5px 10px;
     display: block;
 }
 
@@ -269,6 +266,40 @@ img {
     font-size: 16px;
 }
 
+.talk-bubble {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .triangle.left:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -4px;
+    right: auto;
+    top: auto;
+    bottom: -3px;
+    transform: rotate(-16deg);
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+  }
+  
+  .talktext {
+    color: #000;
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+    padding-block: 2px;
+  }
+
+  .talktextinside{
+    margin-block: 3px;
+  }
+
 .cacm:hover .cacmIcon2 {
     border-bottom: 2px solid rgb(235, 235, 235);
     border-left: 2px solid rgb(235, 235, 235);
@@ -278,16 +309,33 @@ img {
 .activeB, .acm:hover {
     background-color: #fff;
 }
-
     .acm:hover .cacm {
         background-color: #00695C;
     }
 
-    .acm:hover .msbback {
+    .acm:hover .cacmIcon {
+        color: #fff;
+    }
+    
+    .acm:hover .talk-bubble {
         background-color: #00695C;
     }
 
-    .acm:hover .cacmIcon {
+    .acm:hover .triangle.left:before    {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -4px;
+        right: auto;
+        top: auto;
+        bottom: -3px;
+        transform: rotate(-16deg);
+        border: 10px solid;
+        border-color: transparent transparent #00695C transparent;
+    }
+
+    .acm:hover .talktext {
         color: #fff;
     }
 
@@ -295,11 +343,29 @@ img {
         background-color: #00695C;
     }
 
-    .activeB .msbback {
+    .activeB .cacmIcon {
+        color: #fff;
+    }
+
+    .activeB .talk-bubble {
         background-color: #00695C;
     }
 
-    .activeB .cacmIcon {
+    .activeB .triangle.left:before  {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -4px;
+        right: auto;
+        top: auto;
+        bottom: -3px;
+        transform: rotate(-16deg);
+        border: 10px solid;
+        border-color: transparent transparent #00695C transparent;
+    }
+
+    .activeB .talktext {
         color: #fff;
     }
 
@@ -308,3 +374,70 @@ img {
     padding-block-start: 50px;
     padding-inline: 6em;
 }
+
+.hi-slide{
+    position: relative;
+    width: 100%;
+    height: 640px;
+    margin: 0 auto 0;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            { position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;     
+                border-radius: 50px; 
+                 
+                
+              line-height: 40px;
+              text-align: center; 
+              cursor: pointer;
+              background-color: #000; 
+              color: black;               
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+           .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover 
+            {
+            opacity: 1; 
+            background-color: #fff;  
+            }
+            
+           .hi-slide .hi-prev { left: 0px; }
+            
+    .hi-slide .hi-next { right: 0px; }
+
+.hi-slide > ul{
+     
+    list-style: none;
+    position: relative;
+    overflow-x:hidden ;
+    width: 100%;
+    height: 640px;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin:0;
+    padding: 0;
+    border: 3px solid #fff;              
+    background-color: #333; 
+    cursor: pointer; 
+
+}
+
+.hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}

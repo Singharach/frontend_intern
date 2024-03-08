@@ -120,6 +120,11 @@
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	<script src="~/js/slidershow.js" asp-append-version="true"></script>
 	<script src="~/js/news.js" asp-append-version="true"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
