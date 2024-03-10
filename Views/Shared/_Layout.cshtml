@@ -82,24 +82,58 @@
 					<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 						<ul class="navbar-nav flex-grow-1">
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">หน้าแรก</a>
+								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Index">หน้าแรก</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">เกี่ยวกับสถาบัน</a>
+								<div class="dropdown text-blacks">
+									<button class="dropbtn">
+										Dropdown
+										<i class="fa fa-caret-down"></i>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">คลังความรู้</a>
+								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">คลังความรู้</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">ข่าวสาร</a>
+								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">ข่าวสาร</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">หลักสูตร</a>
+								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">หลักสูตร</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">ติดต่อเรา</a>
+								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">ติดต่อเรา</a>
 							</li>
 						</ul>
+					</div>
+					<div class="search-box">
+						<button class="btn-search"><i class="fa fa-search fa-flip-horizontal"></i></button>
+						<input type="text" class="input-search" placeholder="ค้นหา...">
+					</div>
+					<div class="font-box">
+						<span class="fss" onclick="currentSelect(1)">
+							<h4 style="padding:0; margin:0;">ก</h4>
+						</span>
+						<span class="fss" onclick="currentSelect(2)">
+							<h5 style ="padding:3px; margin:0;">ก</h5>
+						</span>
+						<span class="fss" onclick="currentSelect(3)">
+							<h6 style="padding:5px; margin:0;">ก</h6>
+						</span>
+					</div>
+					<div class="lang-box">
+						<span class="lang-change " onclick="currentLang(1)">
+							<h5 style="padding:6px; margin:0;">TH</h5>
+						</span>
+						|
+						<span class="lang-change " onclick="currentLang(2)">
+							<h5 style="padding:6px; margin:0;">EN</h5>
+						</span>
 					</div>
 				</div>
 			</nav>
@@ -120,6 +154,7 @@
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	<script src="~/js/slidershow.js" asp-append-version="true"></script>
 	<script src="~/js/news.js" asp-append-version="true"></script>
+	<script src="~/js/fontNlanguage.js" asp-append-version="true"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
 		<script>
