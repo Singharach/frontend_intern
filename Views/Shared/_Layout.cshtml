@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/icon.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/darkmode.css" asp-append-version="true" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,51 +22,41 @@
 		<header style="min-height: 37px; background-color:#00695C ; position: relative; z-index: 2">
 			<div class="container-fluid">
 				<div style="margin-top: 5px; float: right; margin-inline-end:2em">
-					<div style="display:inline-block;">
-						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
-							<li style="display:inline-block;">
+						<ul class="contact">
+							<li>
 								<a href="https://www.facebook.com" target="_blank">
 									<i class="bi bi-messenger" style="color: white;"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div style="display:inline-block;">
-						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
-							<li style="display:inline-block;">
+						<ul class="contact">
+							<li>
 								<a href="https://www.facebook.com" target="_blank">
 									<i class="bi bi-facebook" style="color: white;"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div style="display:inline-block;">
-						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
-							<li style="display:inline-block;">
+						<ul class="contact">
+							<li>
 								<a href="https://www.linkedin.com" target="_blank">
 									<i class="bi bi-linkedin" style="color: white;"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div style="display:inline-block;">
-						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
-							<li style="display:inline-block;">
+						<ul class="contact">
+							<li>
 								<a href="https://www.x.com" target="_blank">
 									<i class="bi bi-twitter-x" style="color: white;"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div style="display:inline-block;">
-						<ul style="display: block; padding: 0; margin: 0; list-style-type: none">
-							<li style="display:inline-block;">
+						<ul class="contact">
+							<li>
 								<a href="https://www.line.me/th/" target="_blank">
 									<i class="bi bi-line" style="color: white;"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
 				</div>
 			</div>
 		</header>
@@ -85,10 +76,10 @@
 								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Index">หน้าแรก</a>
 							</li>
 							<li class="nav-item">
-								<div class="dropdown text-blacks">
+								<div class="text-blacks">
 									<button class="dropbtn">
-										Dropdown
-										<i class="fa fa-caret-down"></i>
+										เกี่ยวกับสถาบัน
+										<i class="fa fa-angle-down"></i>
 									</button>
 									<div class="dropdown-content">
 										<a href="#">Link 1</a>
@@ -98,16 +89,56 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">คลังความรู้</a>
+								<div class="text-blacks">
+									<button class="dropbtn">
+										คลังความรู้
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div>
 							</li>
 							<li class="nav-item">
-								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">ข่าวสาร</a>
+								<div class="text-blacks">
+									<button class="dropbtn">
+										ข่าวสาร
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div>
 							</li>
 							<li class="nav-item">
-								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">หลักสูตร</a>
+								<div class="text-blacks">
+									<button class="dropbtn">
+										หลักสูตร
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div
 							</li>
 							<li class="nav-item">
-								<a class="text-blacks" asp-area="" asp-controller="Home" asp-action="Privacy">ติดต่อเรา</a>
+								<div class="text-blacks">
+									<button class="dropbtn">
+										ติดต่อเรา
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -155,6 +186,7 @@
 	<script src="~/js/slidershow.js" asp-append-version="true"></script>
 	<script src="~/js/news.js" asp-append-version="true"></script>
 	<script src="~/js/fontNlanguage.js" asp-append-version="true"></script>
+	<script src="~/js/top.js" asp-append-version="true"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery.hislide.js" ></script>
 		<script>

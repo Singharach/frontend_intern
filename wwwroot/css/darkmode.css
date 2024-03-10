@@ -1,0 +1,80 @@
+.dark {
+    width: 120px;
+    height: 50px;
+    position: fixed;
+    left: 50px;
+    bottom: 40px;
+    z-index: 99;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+}
+
+    .dark:hover {
+        opacity: 1;
+    }
+
+    .dark:after {
+        content: "";
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        background: linear-gradient(180deg,#ffcc89,#d8860b);
+        border-radius: 180px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+.dmc {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+    .dmc:checked + .dark {
+        background: #242424;
+    }
+
+        .dmc:checked + .dark:after {
+            left: 118px;
+            transform: translateX(-100%);
+            background: linear-gradient(180deg,#777,#3a3a3a);
+        }
+
+.dark:active:after {
+    width: 50px;
+}
+
+.dark svg {
+    position: absolute;
+    width: 40px;
+    top: 6px;
+    z-index: 100;
+}
+
+    .dark svg.sun {
+        left: 6px;
+        fill: #fff;
+        transition: 0.3s;
+    }
+
+    .dark svg.moon {
+        left: 75px;
+        fill: #7e7e7e;
+        transition: 0.3s;
+    }
+
+.dmc:checked + .dark svg.sun {
+    fill: #7e7e7e;
+}
+
+.dmc:checked + .dark svg.moon {
+    fill: #fff;
+}
