@@ -36,6 +36,7 @@
     width: 0;
     height: 0;
     visibility: hidden;
+    position: fixed;
 }
 
     .dmc:checked + .dark {

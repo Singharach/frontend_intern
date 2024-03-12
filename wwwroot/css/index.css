@@ -15,6 +15,13 @@ body {
     list-style-type: none;
 }
 
+.contact-footer {
+    display: inline-block;
+    padding-inline: 20px;
+    margin: 0;
+    list-style-type: none;
+}
+
 .text-blacks {
     color: rgba(128,128,128,1);
     padding: 0.5rem;
@@ -405,11 +412,10 @@ img {
             { position: absolute;
               top: 50%; 
               width: 40px;
-              height: 40px; 
+              height: 40px;
+              z-index:6;
               margin-top: -20px;     
-                border-radius: 50px; 
-                 
-                
+              border-radius: 50px;
               line-height: 40px;
               text-align: center; 
               cursor: pointer;
@@ -648,3 +654,31 @@ img {
     padding-inline: 15px;
     color: #00695C;
 }
+
+.vertical-menu {
+    width: 234px;
+}
+
+    .vertical-menu a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding:6px;
+    }
+
+.vertical-menu-2 {
+    width: 234px;
+    margin-top: 48px;
+    font-size:18px;
+}
+
+.vertical-menu-3 {
+    width: 332px;
+}
+
+    .vertical-menu-3 a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 6px 78px;
+    }
